@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alke Wallet - Menú principal</title>
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Local  -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-burdeo bg-burdeo">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Alke Wallet</a>
+                <div class="ms-auto">
+                    <a class="nav-link d-inline-block ms-3" href="login.html">Login</a>
+                    <a class="nav-link d-inline-block ms-3" href="menu.html">Menú</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-4">
+            <section>
+                <h2 class="mb-3">
+                    Menú principal
+                </h2>
+        
+                <p class="lead">
+                    Saldo actual:
+                    <span id="saldo-actual">$0</span>
+                </p>
+        
+                <nav>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item">
+                            <a href="deposit.html" class="btn btn-outline-primary w-100">
+                                Depósito
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="sendmoney.html" class="btn btn-outline-primary w-100">
+                                Enviar dinero
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="transactions.html" class="btn btn-outline-primary w-100">
+                                Últimos movimientos
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <a href="login.html" class="btn btn-link">Cerrar sesión</a>
+            </section>
+        </div>
+    </main>
+
+        <!-- Pie de Pagina  -->
+    <footer class="bg-burdeo-dark text-white text-center py-3 mt-4">
+        <p class="mb-0 small">Bootcamp FullStack - 2025 Alke Wallet</p>
+    </footer>
+
+    <!-- JS codigo  -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

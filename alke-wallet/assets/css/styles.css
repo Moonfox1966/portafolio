@@ -1,0 +1,130 @@
+:root {
+    --burdeo-main: #7b1e3a;
+    --burdeo-dark: #5a1429;
+    --burdeo-light: #f8e9ee;
+}
+
+/* Tipografía body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilo de header */
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Área principal */
+main {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Estilo de Footer  */
+footer {
+    background-color: #ffffff;
+    border-top: 2px solid #e0e0e0;
+    padding: 15px 0;
+    text-align: center;
+    color: #555;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/* Formularios */
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Botones */
+button, 
+a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #5a1429; /* #0066cc */
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover,
+a:hover {
+    background-color: #9b0532; /* #004999 */
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #e8e8e8;
+    font-weight: bold;
+}
+
+
+/* listas */
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+/* Fondo burdeo para header/nav */
+.bg-burdeo {
+    background-color: var(--burdeo-main) !important;
+}
+
+/* Fondo burdeo más oscuro para el footer */
+.bg-burdeo-dark {
+    background-color: var(--burdeo-dark) !important;
+}
+
+/* Marca y links del navbar */
+.navbar-burdeo .navbar-brand,
+.navbar-burdeo .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-burdeo .nav-link:hover {
+    color: #f8e9ee !important;
+}
