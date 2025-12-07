@@ -43,11 +43,21 @@
                                min="1" class="form-control" required>
                     </div>
         
-                    <button type="submit" class="btn btn-warning btn-block">
+                    <button type="submit" class="btn btn-warning w-100">
                         Enviar
                     </button>
                 </form>
-        
+
+                <div id="mensaje" class="mt-3"></div>
+
+                <!-- lista de contactos para autocompletar con jQuery -->
+                <ul id="contactos" class="list-group mt-2" style="display:none;">
+                    <li class="list-group-item">Felipe Cuevas</li>
+                    <li class="list-group-item">felipe@ecas-otec.cl</li>
+                    <li class="list-group-item">Pablo Salazar</li>
+                    <li class="list-group-item">pablo.salazar.j@gmail.com</li>
+                </ul>
+
                 <a href="menu.html" class="btn btn-link mt-3">Volver al Menú</a>
             </section>
         </div>
@@ -59,6 +69,8 @@
     </footer>
 
     <!-- JS codigo  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery-actions.js"></script>
 </body>
 </html>

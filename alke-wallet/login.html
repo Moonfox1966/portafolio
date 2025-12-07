@@ -28,7 +28,8 @@
                     Iniciar sesión
                 </h2>
         
-                <form action="menu.html" method="get">
+            <!--    <form action="menu.html" method="get"> -->
+                <form>
                     <div class="form-group mb-3">
                         <label for="email">
                             Correo electrónico
@@ -47,6 +48,10 @@
                         Ingresar
                     </button>
                 </form>
+
+                <!--    Mensaje Dinamico ncon JQuery -->
+                <div id="mensaje" class="mt-3"></div>
+
                 <div class="mt-3 text-center">
                     <a href="index.html" class="btn btn-link">
                         Volver al Home
@@ -62,6 +67,9 @@
     </footer>
     
     <!-- JS codigo  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery-actions.js"></script>
 </body>
 </html>

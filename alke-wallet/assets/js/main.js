@@ -56,7 +56,8 @@ if (esPagina('login.html')) {
                 sessionStorage.setItem('alke_logged', '1');
                 window.location.href = 'menu.html';
             } else {
-                alert('Credenciales incorrectas.\nUsa:\nEmail: ' + DEMO_EMAIL + '\nPass: ' + DEMO_PASS);
+                // alert('Credenciales incorrectas.\nUsa:\nEmail: ' + DEMO_EMAIL + '\nPass: ' + DEMO_PASS);
+                mostrarMensaje("Credenciales incorrectas. Usa:<br>contacto@bootcamp.cl / 1234", "danger");
             }
         });
     }
@@ -84,7 +85,8 @@ if (esPagina('deposit.html')) {
             const monto = Number(inputMonto.value);
 
             if (isNaN(monto) || monto <= 0) {
-                alert('Ingresa un monto válido mayor a 0.');
+                //alert('Ingresa un monto válido mayor a 0.');
+                mostrarMensaje("Debes ingresar un monto válido mayor a 0.", "danger");
                 return;
             }
 
@@ -101,7 +103,8 @@ if (esPagina('deposit.html')) {
             });
             setMovimientos(movimientos);
 
-            alert('Depósito exitoso. Nuevo saldo: $' + saldoActual.toLocaleString('es-CL'));
+            // alert('Depósito exitoso. Nuevo saldo: $' + saldoActual.toLocaleString('es-CL'));
+            mostrarMensaje("Depósito exitoso. Nuevo saldo: $" + saldoActual.toLocaleString('es-CL'), "success");
             inputMonto.value = '';
         });
     }
@@ -123,17 +126,20 @@ if (esPagina('sendmoney.html')) {
             let saldoActual = getSaldo();
 
             if (!contacto) {
-                alert('Ingresa un contacto válido.');
+                // alert('Ingresa un contacto válido.');
+                mostrarMensaje("Debes ingresar un contacto válido.", "danger");
                 return;
             }
 
             if (isNaN(monto) || monto <= 0) {
-                alert('Ingresa un monto válido mayor a 0.');
+                //alert('Ingresa un monto válido mayor a 0.');
+                mostrarMensaje("El monto ingresado no es válido.", "danger");
                 return;
             }
 
             if (monto > saldoActual) {
-                alert('Saldo insuficiente para realizar esta operación.');
+                // alert('Saldo insuficiente para realizar esta operación.');
+                mostrarMensaje("Saldo insuficiente para enviar dinero.", "danger");
                 return;
             }
 
@@ -149,7 +155,9 @@ if (esPagina('sendmoney.html')) {
             });
             setMovimientos(movimientos);
 
-            alert('Envío realizado. Nuevo saldo: $' + saldoActual.toLocaleString('es-CL'));
+            // alert('Envío realizado. Nuevo saldo: $' + saldoActual.toLocaleString('es-CL'));
+            mostrarMensaje("Envío realizado correctamente. Nuevo saldo: $" + saldoActual.toLocaleString('es-CL'), "success");
+
             inputMonto.value = '';
             inputContacto.value = '';
         });
